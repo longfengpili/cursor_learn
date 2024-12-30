@@ -18,14 +18,14 @@
 
 1. Tab功能打开和关闭
 
-![Tab功能开关界面](./pics/cursor1.png)
+    ![Tab功能开关界面](./pics/cursor1.png)
 
 2. Tab的功能
 
-+ 生成代码, 从光标所在的地方给出建议添加的代码
-+ 多行编辑，一次性修改多行，比如修改多行代码的缩进
-+ 智能重写，根据最新的更新和报错，提出一些建议
-+ 光标预测，自动预测下一个光标所在的位置
+    + 生成代码, 从光标所在的地方给出建议添加的代码
+    + 多行编辑，一次性修改多行，比如修改多行代码的缩进
+    + 智能重写，根据最新的更新和报错，提出一些建议
+    + 光标预测，自动预测下一个光标所在的位置
 
 3. Tab（cursor预测功能）显示
 
@@ -89,7 +89,7 @@
 
 ### 内置System Prompt
 
-> 官方prompt地址：https://cursor.directory/
+> 官方prompt地址：<https://cursor.directory/>
 
 + 打开设置界面, 文件-》首选项-》设置-》cursor settings
 
@@ -135,12 +135,16 @@
 
 ![自定义模型配置](./pics/cursor8.png)
 
-### 白嫖方法
+### 内置docs
 
-+ 打开settings界面 https://www.cursor.com/settings
+> 打开设置界面, 文件-》首选项-》设置-》cursor settings-》features-》docs
+
+![内置docs配置](./pics/cursor10.png)
+
+## 白嫖方法
+
++ 打开settings界面 <https://www.cursor.com/settings>
 
 + 点击删除再重新注册
 
 ![账号设置界面](./pics/cursor9.png)
-
-
