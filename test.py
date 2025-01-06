@@ -15,7 +15,8 @@ class Calculator:
             '7', '8', '9', '/',
             '4', '5', '6', '*',
             '1', '2', '3', '-',
-            '0', '.', '=', '+'
+            '0', '.', '=', '+',
+            '^'  # 添加幂运算符
         ]
         
         # 创建按钮
@@ -45,7 +46,8 @@ class Calculator:
     def click(self, key):
         if key == '=':
             try:
-                result = eval(self.display.get())
+                expression = self.display.get().replace('^', '**')  # 将^替换为**进行幂运算
+                result = eval(expression)
                 self.display.delete(0, tk.END)
                 self.display.insert(tk.END, str(result))
             except:

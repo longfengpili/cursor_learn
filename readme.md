@@ -4,6 +4,8 @@
 
 > cursor官网： <https://www.cursor.com/>
 
++ Cursor AI是一款基于人工智能技术的代码编辑器，旨在通过先进的自然语言处理技术提升程序员的编码效率。
++ 它支持多种编程语言，如Python、Java、C#和JavaScript，允许用户以自然语言的方式与AI进行交流，能够理解开发者的指令，智能生成代码片段，提供实时语法检查，并在代码出错时给出修复建议
 + Cursor 是由 Anysphere这个实验室打造的代码编辑器，它基于 VSCode 修改派生
 + cursor是一个集成了GPT4、Claude 3.5等先进LLM的类vscode的编译器
 + cursor的布局和vscode基本一致，并且cursor的使用操作也和vscode一致，包括extension下载、python编译器配置、远程服务器连接和settings等
@@ -112,10 +114,22 @@
 
 ![内置docs配置](./pics/cursor10.png)
 
+
 ## 白嫖方法
+
+### 删除注册
 
 + 打开settings界面 <https://www.cursor.com/settings>
 
 + 点击删除再重新注册
 
 ![账号设置界面](./pics/cursor9.png)
+
+### 无限邮注册
+
++ 无限邮： <https://2925.com/>
+
+### 机器被限制
+
++ 修改机器码： <https://github.com/fly8888/cursor_machine_id>
+
