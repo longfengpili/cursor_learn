@@ -1,10 +1,14 @@
 import tkinter as tk
 from tkinter import ttk
+import math
 
 class Calculator:
     def __init__(self, root):
         self.root = root
         self.root.title("简单计算器")
+        
+        # 初始化记忆变量
+        self.memory = 0
         
         # 创建显示框
         self.display = ttk.Entry(root, justify="right", font=("Arial", 20))
@@ -16,7 +20,7 @@ class Calculator:
             '4', '5', '6', '*',
             '1', '2', '3', '-',
             '0', '.', '=', '+',
-            '^'  # 添加幂运算符
+            '^', '√', 'M+', 'MR'  # 添加记忆功能按钮
         ]
         
         # 创建按钮
@@ -50,9 +54,31 @@ class Calculator:
                 result = eval(expression)
                 self.display.delete(0, tk.END)
                 self.display.insert(tk.END, str(result))
+                self.memory = result  # 记住结果
             except:
                 self.display.delete(0, tk.END)
                 self.display.insert(tk.END, "错误")
+        elif key == '√':
+            try:
+                number = float(self.display.get())
+                result = math.sqrt(number)
+                self.display.delete(0, tk.END)
+                self.display.insert(tk.END, str(result))
+                self.memory = result  # 记住结果
+            except:
+                self.display.delete(0, tk.END)
+                self.display.insert(tk.END, "错误")
+        elif key == 'M+':
+            try:
+                self.memory += float(self.display.get())  # 将当前显示的值加到记忆中
+                self.display.delete(0, tk.END)
+                self.display.insert(tk.END, "记忆已更新")
+            except:
+                self.display.delete(0, tk.END)
+                self.display.insert(tk.END, "错误")
+        elif key == 'MR':
+            self.display.delete(0, tk.END)
+            self.display.insert(tk.END, str(self.memory))  # 显示记忆中的值
         else:
             self.display.insert(tk.END, key)
 

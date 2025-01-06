@@ -133,3 +133,9 @@
 
 + 修改机器码： <https://github.com/fly8888/cursor_machine_id>
 
+## 参考资料
+
++ 官方文档： <https://docs.cursor.com/>
++ 官方prompt： <https://cursor.directory/>
++ 官方github： <https://github.com/cursor-labs/cursor>
++ lookai: <https://www.lookai.top/cn>

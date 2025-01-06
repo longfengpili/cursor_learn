@@ -2,6 +2,11 @@
 format: text/markdown
 encoding: utf-8
 
+# AI配置
+model: gpt-4o-mini
+temperature: 0.7
+max_tokens: 2048
+
 # 系统提示词
 system_prompt: |
   # Role
@@ -36,7 +41,4 @@ system_prompt: |
   ## 第三步
   在完成用户要求的任务后, 你应该对改成任务完成的步骤进行反思, 思考项目可能存在的问题和改进方式, 并更新在readme.md文件中
 
-# AI配置
-model: claude-3-5-sonnet
-temperature: 0.7
-max_tokens: 2048
+
